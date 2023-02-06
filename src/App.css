@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+.nav_menu{
+  background-color: #8740A0;
+}
+button{
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #EAD5F2;
+}
+button:hover{
+  background-color: #db9bf4;
+}
+
+.visual_main{
+  margin: 20px;
+  width: 100%; height: 200px;
+  background-image: url(../public/images/visual_main_01.jpg);
+  background-size: 100%;
+  background-repeat:no-repeat;
+
+  animation-name: visual_banner; /*이름*/
+  animation-duration: 10s; /*몇초??*/
+  animation-iteration-count: infinite;
+  margin: 45px auto 60px auto;
+
+}
+@keyframes visual_banner{
+  0%{background-image: url(../public/images/visual_main_01.jpg);}
+  16.5%{background-image: url(../public/images/visual_main_02.jpg);}
+  33%{background-image: url(../public/images/visual_main_02.jpg);}
+  49.5%{background-image: url(../public/images/visual_main_03.jpg);}
+  66%{background-image: url(../public/images/visual_main_03.jpg);}
+  82.5%{background-image: url(../public/images/visual_main_01.jpg);}
+  100%{background-image: url(../public/images/visual_main_01.jpg);}
+}
+/* visual_main end! */
+
+.best_name{
+  width: 20%; height: 40px;
+  font-weight: bold;
+  border-left: 5px solid #8740A0 ;
+}
+
+.menus{
+  border: 1px solid rgba(0, 0, 0, 0.213);
+  margin: 10px;
+  border-radius: 20px;
+}
+.menus:hover{
+  background-color: #EAD5F2;
+  transition: all 0.1s linear;
+  box-shadow: 2px 2px 5px rgba(138, 27, 241, 0.429);
+}
+.menus:hover a{
+  color: #792896;
+}
+.main_item_img{
+  margin-top: 10px;
+}
+.item_name{
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.about_page_name{
+  font-weight: bold;
+  margin: 30px;
+}
+.kurlys_start_img{
+  width: 40%; height: 40%;
+}
+.kurlys_start_name{
+  margin: 20px;
+  font-weight: bold;
+}
+.kurlys_start_p{
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* 디테일쓰 */
+.detail_page_box{
+  border: 1px solid rgb(138, 138, 138);
+  padding: 20px;
+}
+.detail_name{
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* 장바구니 */
+.cart_name{
+  font-weight: bold;
+  margin: 20px;
+}
